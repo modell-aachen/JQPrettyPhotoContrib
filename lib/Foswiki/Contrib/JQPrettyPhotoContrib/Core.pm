@@ -37,6 +37,7 @@ sub new {
       css => ['jquery.prettyPhoto.css'],
       javascript => ['jquery.prettyPhoto.js', 'jquery.prettyPhoto.init.js'],
       puburl => '%PUBURLPATH%/%SYSTEMWEB%/JQPrettyPhotoContrib',
+      dependencies => ["metadata"],
     ),
     $class
   );
