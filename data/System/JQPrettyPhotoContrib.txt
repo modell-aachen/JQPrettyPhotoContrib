@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="ProjectContributor" comment="reprev" date="1302089745" format="1.1" reprev="2" version="2"}%
+%META:TOPICINFO{author="ProjectContributor" comment="reprev" date="1302157505" format="1.1" reprev="2" version="3"}%
 ---+!! %TOPIC%
 %SHORTDESCRIPTION%
 
@@ -10,16 +10,16 @@ jquery lightbox clone by Stephane Caron
 prettyPhoto is a full blown media lightbox supporting images, videos, flash, !YouTube, iframes and ajax.
 It can be used as a drop-in replacement of JQueryPlugin's version of slimbox, another lightbox clone, shipped with foswiki by default.
 
-prettyPhoto has been integrated by means of minimal invasive markup, that is any DIV element with a class =jqPrettyPhoto= will be converted into a media lightbox automatically without any extra provisions, similar to the way slimbox is used. Additional parameter to the plugin itself can be passed using JQueryMetadata.
+prettyPhoto has been integrated by means of minimal invasive markup, that is any DIV element with a class =jqPrettyPhoto= will be converted into a media lightbox automatically without any extra provisions, similar to the way slimbox is used. Additional parameter to the plugin itself can be passed using System.JQueryMetadata.
 
 Note that Foswiki:Extensions/TopicInteractionPlugin as well as Foswiki:Extensions/ImageGalleryPlugin 
 will automatically switch from slimbox to prettyPhoto for lightboxing.
 
 ---++ Examples
 
-(using Foswiki:Extensions/ImagePlugin)
+( using Foswiki:Extensions/ImagePlugin )
 
-%JQREQUIRE{"prettyphoto"}%
+<!-- %JQREQUIRE{"prettyphoto"}% -->
 <div class="jqPrettyPhoto">
 %IMAGE{"1.jpg" size="60x60>" crop="on"}%
 %IMAGE{"3.jpg" size="60x60>" crop="on"}%
@@ -44,6 +44,8 @@ will automatically switch from slimbox to prettyPhoto for lightboxing.
 |  Release: | %$RELEASE% |
 |  Version: | %$VERSION% |
 |  Change History: | <!-- versions below in reverse order -->&nbsp; |
+|  30 Sep 2011: | upgrading to prettyPhoto 3.1.3; \
+                  switching off overlay gallery by default for performance reasons |
 |  06 Apr 2011: | initial release |
 |  Dependencies: | %$DEPENDENCIES% |
 |  Home page: | Foswiki:Extensions/%TOPIC% |

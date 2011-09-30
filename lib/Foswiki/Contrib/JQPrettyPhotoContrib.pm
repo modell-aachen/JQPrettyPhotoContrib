@@ -13,7 +13,7 @@
 # GNU General Public License for more details, published at
 # http://www.gnu.org/copyleft/gpl.html
 
-package Foswiki::Plugins::JQPrettyPhotoContrib;
+package Foswiki::Contrib::JQPrettyPhotoContrib;
 
 use strict;
 use warnings;
@@ -26,7 +26,7 @@ use warnings;
 
 
 our $VERSION = '$Rev$';
-our $RELEASE = '1.00';
+our $RELEASE = '1.10';
 our $SHORTDESCRIPTION = 'Yet another nice lightbox plugin';
 our $NO_PREFS_IN_TOPIC = 1;
 
@@ -40,7 +40,7 @@ call this to init the plugin from perl
 
 sub init {
   require Foswiki::Plugins::JQueryPlugin ();
-  Foswiki::Plugins::JQueryPlugin::registerPlugin("PrettyPhoto", "Foswiki::Plugins::JQPrettyPhotoContrib::Core");
+  Foswiki::Plugins::JQueryPlugin::registerPlugin("PrettyPhoto", "Foswiki::Contrib::JQPrettyPhotoContrib::Core");
 }
 
 1;

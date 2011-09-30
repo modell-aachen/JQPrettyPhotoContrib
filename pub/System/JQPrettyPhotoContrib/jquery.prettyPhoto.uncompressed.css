@@ -34,6 +34,7 @@
 	div.pp_default .pp_gallery ul li a { background: url(images/prettyPhoto/default/default_thumb.png) center center #f8f8f8; border:1px solid #aaa; }
 	div.pp_default .pp_gallery ul li a:hover,
 	div.pp_default .pp_gallery ul li.selected a { border-color: #fff; }
+	div.pp_default .pp_social { margin-top: 7px; }
 
 	div.pp_default .pp_gallery a.pp_arrow_previous,
 	div.pp_default .pp_gallery a.pp_arrow_next { position: static; left: auto; }
@@ -45,7 +46,7 @@
 	div.pp_default a.pp_arrow_next { background: url(images/prettyPhoto/default/sprite.png) -31px -3px no-repeat; height: 20px; margin: 4px 0 0 0; width: 20px; }
 	div.pp_default a.pp_arrow_next { left: 52px; background-position: -82px -3px; } /* The next arrow in the bottom nav */
 	div.pp_default .pp_content_container .pp_details { margin-top: 5px; }
-	div.pp_default .pp_nav { clear: none; height: 30px; width: 105px; position: relative; }
+	div.pp_default .pp_nav { clear: none; height: 30px; width: 110px; position: relative; }
 	div.pp_default .pp_nav .currentTextHolder{ font-family: Georgia; font-style: italic; color:#999; font-size: 11px; left: 75px; line-height: 25px; margin: 0; padding: 0 0 0 10px; position: absolute; top: 2px; }
 	
 	div.pp_default .pp_close:hover, div.pp_default .pp_nav .pp_play:hover, div.pp_default .pp_nav .pp_pause:hover, div.pp_default .pp_arrow_next:hover, div.pp_default .pp_arrow_previous:hover { opacity:0.7; }
@@ -225,6 +226,8 @@
 	div.facebook .pp_contract { background: url(images/prettyPhoto/facebook/sprite.png) 0 -26px no-repeat; cursor: pointer; } /* Contract button */
 	div.facebook .pp_contract:hover { background: url(images/prettyPhoto/facebook/sprite.png) 0 -47px no-repeat; cursor: pointer; } /* Contract button hover */
 	div.facebook .pp_close { width: 22px; height: 22px; background: url(images/prettyPhoto/facebook/sprite.png) -1px -1px no-repeat; cursor: pointer; } /* Close button */
+	div.facebook .pp_details { position: relative; }
+	div.facebook .pp_description { margin: 0 37px 0 0; }
 	div.facebook #pp_full_res .pp_inline { color: #000; } 
 	div.facebook .pp_loaderIcon { background: url(images/prettyPhoto/facebook/loader.gif) center center no-repeat; } /* Loader icon */
 	
@@ -321,8 +324,12 @@
 			}
 				.pp_description {
 					display: none;
-					margin: 0 0 5px 0;
+					margin: 0;
 				}
+				
+				.pp_social { float: left; margin: 0; }
+				.pp_social .facebook { float: left; margin-left: 5px; width: 55px; overflow: hidden; }
+				.pp_social .twitter { float: left; }
 				
 				.pp_nav {
 					clear: right;
@@ -333,6 +340,7 @@
 					.pp_nav p {
 						float: left;
 						margin: 2px 4px;
+						white-space: nowrap;
 					}
 					
 					.pp_nav .pp_play,
@@ -371,6 +379,7 @@
 			.pp_gallery div {
 				float: left;
 				overflow: hidden;
+				position: relative;
 			}
 			
 			.pp_gallery ul {
