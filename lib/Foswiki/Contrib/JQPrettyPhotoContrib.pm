@@ -24,9 +24,10 @@ use warnings;
 
 =cut
 
-our $VERSION           = '$Rev$';
-our $RELEASE           = '1.10';
-our $SHORTDESCRIPTION  = 'Yet another nice lightbox plugin';
+
+our $VERSION = '$Rev$';
+our $RELEASE = '1.10';
+our $SHORTDESCRIPTION = 'Yet another nice lightbox plugin';
 our $NO_PREFS_IN_TOPIC = 1;
 
 =begin TML
@@ -38,9 +39,8 @@ call this to init the plugin from perl
 =cut
 
 sub init {
-    require Foswiki::Plugins::JQueryPlugin();
-    Foswiki::Plugins::JQueryPlugin::registerPlugin( "PrettyPhoto",
-        "Foswiki::Contrib::JQPrettyPhotoContrib::Core" );
+  require Foswiki::Plugins::JQueryPlugin ();
+  Foswiki::Plugins::JQueryPlugin::registerPlugin("PrettyPhoto", "Foswiki::Contrib::JQPrettyPhotoContrib::Core");
 }
 
 1;

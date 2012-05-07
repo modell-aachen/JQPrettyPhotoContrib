@@ -24,27 +24,25 @@ Constructor
 =cut
 
 sub new {
-    my $class = shift;
-    my $session = shift || $Foswiki::Plugins::SESSION;
+  my $class = shift;
+  my $session = shift || $Foswiki::Plugins::SESSION;
 
-    my $this = bless(
-        $class->SUPER::new(
-            $session,
-            name    => 'PrettyPhoto',
-            version => '3.0',
-            author  => 'Stephane Caron',
-            homepage =>
-'http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/',
-            css => ['jquery.prettyPhoto.css'],
-            javascript =>
-              [ 'jquery.prettyPhoto.js', 'jquery.prettyPhoto.init.js' ],
-            puburl       => '%PUBURLPATH%/%SYSTEMWEB%/JQPrettyPhotoContrib',
-            dependencies => ["metadata"],
-        ),
-        $class
-    );
+  my $this = bless(
+    $class->SUPER::new(
+      $session,
+      name => 'PrettyPhoto',
+      version => '3.0',
+      author => 'Stephane Caron',
+      homepage => 'http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/',
+      css => ['jquery.prettyPhoto.css'],
+      javascript => ['jquery.prettyPhoto.js', 'jquery.prettyPhoto.init.js'],
+      puburl => '%PUBURLPATH%/%SYSTEMWEB%/JQPrettyPhotoContrib',
+      dependencies => ["metadata"],
+    ),
+    $class
+  );
 
-    return $this;
+  return $this;
 }
 
 1;
