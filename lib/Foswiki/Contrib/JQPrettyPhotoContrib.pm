@@ -25,7 +25,7 @@ use warnings;
 =cut
 
 
-our $VERSION = '$Rev$';
+our $VERSION = '1.10';
 our $RELEASE = '1.10';
 our $SHORTDESCRIPTION = 'Yet another nice lightbox plugin';
 our $NO_PREFS_IN_TOPIC = 1;
