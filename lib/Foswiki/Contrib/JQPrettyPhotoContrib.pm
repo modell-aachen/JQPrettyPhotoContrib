@@ -39,7 +39,7 @@ call this to init the plugin from perl
 =cut
 
 sub init {
-  require Foswiki::Plugins::JQueryPlugin ();
+  require Foswiki::Plugins::JQueryPlugin;
   Foswiki::Plugins::JQueryPlugin::registerPlugin("PrettyPhoto", "Foswiki::Contrib::JQPrettyPhotoContrib::Core");
 }
 
